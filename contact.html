@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Flavour Fusion</title>
+</head>
+<body style="
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  background-image: url('https://img.freepik.com/free-photo/ingredients-cabbage-carrot-pie-cabbage-carrots-eggs-flour-milk-butter-spices-white-background_127032-2819.jpg?semt=ais_hybrid');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+">
+  <div style="
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  ">
+    <header style="background: linear-gradient(to right, rgba(255, 127, 95, 0), rgba(254, 180, 123, 0.9)); padding: 20px; color: white; text-align: center;">
+      <h1 style="margin: 0; font-size: 2em;">Flavour Fusion</h1>
+      <nav style="margin-top: 15px;">
+        <a href="index.html" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold; transition: opacity 0.3s;">Home</a>
+        <a href="categories.html" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold; transition: opacity 0.3s;">Categories</a>
+        <a href="contact.html" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold; transition: opacity 0.3s;">Contact</a>
+      </nav>
+    </header>
+    
+    <main style="max-width: 800px; margin: 40px auto; padding: 0 20px; flex-grow: 1;">
+      <section id="contact" class="contact-section" style="background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 30px;">
+        <h2 style="color: #ff7e5f; text-align: center; margin-bottom: 20px;">Contact Us</h2>
+        <p style="text-align: center; margin-bottom: 30px;">We would love to hear from you! Please fill out the form below to get in touch.</p>
+        
+        <form class="contact-form" action="#" method="post" style="display: flex; flex-direction: column;">
+          <label for="name" style="margin-bottom: 5px; font-weight: bold;">Name</label>
+          <input type="text" id="name" name="name" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          
+          <label for="email" style="margin-bottom: 5px; font-weight: bold;">Email</label>
+          <input type="email" id="email" name="email" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          
+          <label for="message" style="margin-bottom: 5px; font-weight: bold;">Message</label>
+          <textarea id="message" name="message" rows="5" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;"></textarea>
+          
+          <button type="submit" style="background-color: #ff7e5f; color: white; border: none; padding: 12px 20px; border-radius: 4px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">Submit</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer style="background-color: rgba(51, 51, 51, 0.8); color: white; text-align: center; padding: 10px; width: 100%;">
+      <p style="margin: 0;">&copy; 2024 Flavour Fusion. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <style>
+    @media (max-width: 600px) {
+      main {
+        padding: 0 10px;
+      }
+      .contact-section {
+        padding: 20px;
+      }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+    button[type="submit"]:hover {
+      background-color: #e86a4d;
+    }
+  </style>
+</body>
+</html>

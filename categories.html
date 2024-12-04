@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Categories</title>
+</head>
+<body style="
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333333cb;
+  background-image: url('https://img.freepik.com/free-photo/ingredients-cabbage-carrot-pie-cabbage-carrots-eggs-flour-milk-butter-spices-white-background_127032-2819.jpg?semt=ais_hybrid');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+">
+  <div style="
+    background-color: rgba(0, 0, 0, 0.119);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  ">
+    <header style="background: linear-gradient(to right, rgba(255, 127, 95, 0), rgba(254, 180, 123, 0.9)); padding: 20px; color: white; text-align: center;">
+      <h1 style="margin: 0; font-size: 2em;">Recipe Categories</h1>
+      <nav style="margin-top: 15px;">
+        <a href="index.html" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold; transition: opacity 0.3s;">Home</a>
+        <a href="categories.html" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold; transition: opacity 0.3s;">Categories</a>
+        <a href="contact.html" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold; transition: opacity 0.3s;">Contact</a>
+      </nav>
+    </header>
+    
+    <main style="max-width: 800px; margin: 20px auto; padding: 0 20px; flex-grow: 1;">
+      <section class="categories">
+        <h2 style="text-align: center; color: #ff7e5f;">Browse by Category</h2>
+        <ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: space-around;">
+          <li style="background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin: 10px; width: calc(33.333% - 20px); transition: transform 0.3s ease;">
+            <a href="#" style="display: block; padding: 20px; text-decoration: none; color: #333; text-align: center;">
+              <img src="https://www.cookingclassy.com/wp-content/uploads/2015/04/breakfast-tacos5-srgb.-392x510.jpg" alt="Breakfast" style="max-width: 100%; border-radius: 8px;">
+              <h3 style="margin-top: 10px; color: #ff7e5f;">Breakfast</h3>
+            </a>
+          </li>
+          <li style="background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin: 10px; width: calc(33.333% - 20px); transition: transform 0.3s ease;">
+            <a href="#" style="display: block; padding: 20px; text-decoration: none; color: #333; text-align: center;">
+              <img src="https://www.cookingclassy.com/wp-content/uploads/2016/07/chicken_avocado_caesar_salad_wrap10.-392x510.jpg" alt="Lunch" style="max-width: 100%; border-radius: 8px;">
+              <h3 style="margin-top: 10px; color: #ff7e5f;">Lunch</h3>
+            </a>
+          </li>
+          <li style="background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin: 10px; width: calc(33.333% - 20px); transition: transform 0.3s ease;">
+            <a href="#" style="display: block; padding: 20px; text-decoration: none; color: #333; text-align: center;">
+              <img src="https://www.cookingclassy.com/wp-content/uploads/2018/04/Spinach-Artichoke-Chicken-14-392x510.jpg" alt="Dinner" style="max-width: 100%; border-radius: 8px;">
+              <h3 style="margin-top: 10px; color: #ff7e5f;">Dinner</h3>
+            </a>
+          </li>
+          <li style="background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin: 10px; width: calc(33.333% - 20px); transition: transform 0.3s ease;">
+            <a href="#" style="display: block; padding: 20px; text-decoration: none; color: #333; text-align: center;">
+              <img src="https://www.cookingclassy.com/wp-content/uploads/2019/09/pumpkin-roll-01-392x510.jpg" alt="Desserts" style="max-width: 100%; border-radius: 8px;">
+              <h3 style="margin-top: 10px; color: #ff7e5f;">Desserts</h3>
+            </a>
+          </li>
+          <li style="background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin: 10px; width: calc(33.333% - 20px); transition: transform 0.3s ease;">
+            <a href="#" style="display: block; padding: 20px; text-decoration: none; color: #333; text-align: center;">
+              <img src="https://www.cookingclassy.com/wp-content/uploads/2021/09/baked-apple-chips-2-392x510.jpg" alt="Snacks" style="max-width: 100%; border-radius: 8px;">
+              <h3 style="margin-top: 10px; color: #ff7e5f;">Snacks</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    
+    <footer style="background-color: rgba(51, 51, 51, 0.8); color: white; text-align: center; padding: 10px; width: 100%;">
+      <p style="margin: 0;">&copy; 2024 Recipe Blog. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <style>
+    @media (max-width: 600px) {
+      main ul li {
+        width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 400px) {
+      main ul li {
+        width: 100%;
+      }
+    }
+    main ul li:hover {
+      transform: translateY(-5px);
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+  </style>
+</body>
+</html>
